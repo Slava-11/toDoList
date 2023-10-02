@@ -1,11 +1,11 @@
-import { useApiContext } from "../context/AppContext";
+import { useApiContext } from "../../context/AppContext";
 
 export const useAddTodo = () => {
   const { todos, setTodos, task, setTask } = useApiContext();
 
   const handleAddTodo = (e: React.MouseEvent) => {
-    e.preventDefault()
-    if (task.trim() === '') return;
+    e.preventDefault();
+    if (task.trim() === "") return;
 
     const newTodo = {
       id: todos.length + 1,
@@ -14,7 +14,7 @@ export const useAddTodo = () => {
     };
 
     setTodos([...todos, newTodo]);
-    setTask('');
+    setTask("");
   };
 
   return handleAddTodo;

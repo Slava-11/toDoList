@@ -1,4 +1,4 @@
-import { useApiContext } from "../context/AppContext";
+import { useApiContext } from "../../context/AppContext";
 
 export const useDeleteCompletedTodos = () => {
   const { todos, setTodos } = useApiContext();

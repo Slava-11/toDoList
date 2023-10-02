@@ -1,5 +1,5 @@
 import { useApiContext } from "../context/AppContext";
-import { Todo } from "../components/Todo";
+import { Todo } from "../components/Todo/Todo";
 
 export const Todos = () => {
   const { todos } = useApiContext();

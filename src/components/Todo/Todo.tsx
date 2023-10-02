@@ -1,8 +1,8 @@
-import { useDeleteTodo } from "../hooks/useDeleteTodo";
-import { useCompleteTodo } from "../hooks/useCompleteTodo";
-import { ScheduleIcon } from "../icons/ScheduleIcon";
-import { CrossIcon } from "../icons/CrossIcon";
-import { CheckIcon } from "../icons/CheckIcon";
+import { useDeleteTodo } from "./useDeleteTodo";
+import { useCompleteTodo } from "./useCompleteTodo";
+import { ScheduleIcon } from "../../icons/ScheduleIcon";
+import { CrossIcon } from "../../icons/CrossIcon";
+import { CheckIcon } from "../../icons/CheckIcon";
 
 type TodoProps = {
   children: string;

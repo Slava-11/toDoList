@@ -1,8 +1,8 @@
-import { useDeleteAllTodos } from "../hooks/useDeleteAllTodos";
-import { useDeleteCompletedTodos } from "../hooks/useDeleteCompletedTodos";
-import { useApiContext } from "../context/AppContext";
-import { ProcessingIcon } from "../icons/ProcessingIcon";
-import { TrashBinIcon } from "../icons/TrashBinIcon";
+import { useDeleteAllTodos } from "./useDeleteAllTodos";
+import { useDeleteCompletedTodos } from "./useDeleteCompletedTodos";
+import { useApiContext } from "../../context/AppContext";
+import { ProcessingIcon } from "../../icons/ProcessingIcon";
+import { TrashBinIcon } from "../../icons/TrashBinIcon";
 
 export const Buttons = () => {
   const deleteAllTodos = useDeleteAllTodos;

@@ -1,8 +1,8 @@
 import "./App.css";
 import { ApiProvider } from "./context/AppContext";
-import { Buttons } from "./sections/Buttons";
+import { Buttons } from "./sections/Buttons/Buttons";
 import { ColorMode } from "./sections/ColorMode";
-import { Form } from "./sections/Form";
+import { Form } from "./sections/Form/Form";
 import { Header } from "./sections/Header";
 import { Todos } from "./sections/Todos";
 

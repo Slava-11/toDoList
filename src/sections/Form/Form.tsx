@@ -1,5 +1,5 @@
-import { useApiContext } from "../context/AppContext";
-import { useAddTodo } from "../hooks/useAddTodo";
+import { useApiContext } from "../../context/AppContext";
+import { useAddTodo } from "./useAddTodo";
 
 export const Form = () => {
   const { task, setTask } = useApiContext();

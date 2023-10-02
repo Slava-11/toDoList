@@ -1,4 +1,4 @@
-import { useApiContext } from "../context/AppContext";
+import { useApiContext } from "../../context/AppContext";
 
 export const useDeleteTodo = () => {
   const { todos, setTodos } = useApiContext();
@@ -6,6 +6,5 @@ export const useDeleteTodo = () => {
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
-  return deleteTodo
+  return deleteTodo;
 };
-/// Очень важно
