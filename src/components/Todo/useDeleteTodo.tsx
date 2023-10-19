@@ -1,8 +1,9 @@
 import { useApiContext } from "../../context/AppContext";
+import { TodoId } from "../../types/types";
 
 export const useDeleteTodo = () => {
   const { todos, setTodos } = useApiContext();
-  const deleteTodo = (id: number | string) => {
+  const deleteTodo = (id: TodoId) => {
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };

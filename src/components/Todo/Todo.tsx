@@ -6,8 +6,11 @@ import { CheckIcon } from "../../icons/CheckIcon";
 
 type TodoProps = {
   children: string;
-  key?: number | string;
-  todo: number | string;
+  key?: string | number; 
+  todo: {
+    id: number;
+    completed: boolean;
+  };
 };
 
 export const Todo = ({ children, key, todo }: TodoProps) => {
